@@ -11,11 +11,11 @@
                 "dbo.TrainerModels",
                 c => new
                     {
-                    Id = c.Int(nullable: false, identity: true),
-                    FirstName = c.String(),
-                    LastName = c.String(),
-                    DateOfBirth = c.DateTime(nullable: false),
-                })
+                        Id = c.Int(nullable: false, identity: true),
+                        FirstName = c.String(),
+                        LastName = c.String(),
+                        DateOfBirth = c.DateTime(nullable: false),
+                    })
                 .PrimaryKey(t => t.Id);
             
         }
