@@ -28,14 +28,14 @@ namespace TrainerManagementApp.DAL.Services
 
         public string Add()
         {
-            string qry = "insert into TrainerModels(Title, IsCompleted, DueDate)" +
+            string qry = "insert into TrainerModels(FirstName, LastName, DateOfBirth)" +
                 "values('";
             return qry;
         }
 
         public string Update()
         {
-            var query = "update TrainerModels set Title='";
+            var query = "update TrainerModels set FirstName='";
             return query;
         }
 
